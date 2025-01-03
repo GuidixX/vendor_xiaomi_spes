@@ -151,7 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
-    vendor/xiaomi/spes/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
@@ -179,7 +178,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc \
     vendor/xiaomi/spes/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -492,10 +490,8 @@ PRODUCT_PACKAGES += \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
-    libshoebox \
     libtinyxml \
-    libcld80211 \
-    libcrypto-v34 \
+    libshoebox \
     android.hardware.secure_element@1.0-impl \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
@@ -616,7 +612,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
     consumerir.bengal \
-    displayfeature.default \
     fingerprint.fpc.default \
     fingerprint.fpc.bengal \
     fingerprint.goodix.default \
@@ -632,7 +627,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     lib-imscmservice \
     lib-imsdpl \
     lib-imsqimf \
@@ -706,8 +700,6 @@ PRODUCT_PACKAGES += \
     libcpion \
     libdataitems \
     libdisp-aba \
-    libdisplayfeature \
-    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdng_sdk2vendor \
@@ -834,7 +826,6 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libsoc_helper \
     libsoc_helper_jni \
-    libspl \
     libssc \
     libssc_default_listener \
     libssd \
@@ -1051,8 +1042,8 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
-    vendor.qti.gnss@4.0-service.xml \
     vendor.xiaomi.hardware.mtdservice@1.3 \
+    vendor.qti.gnss@4.0-service.xml \
     chargeonlymode \
     ATFWD-daemon \
     STFlashTool \
@@ -1062,7 +1053,6 @@ PRODUCT_PACKAGES += \
     cdsprpcd \
     cnd \
     cnss-daemon \
-    displayfeature \
     dpmQmiMgr \
     dspservice \
     f2player \
@@ -1083,7 +1073,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor.xiaomi.hardware.displayfeature@1.0-service \
     ims_rtp_daemon \
     imsdatadaemon \
     imsqmidaemon \
